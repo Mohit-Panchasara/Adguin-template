@@ -140,7 +140,6 @@ Open `http://localhost:3000` with your browser to see the result.
 
         - src/application -
 
-
 ### Public Files
 
     .
