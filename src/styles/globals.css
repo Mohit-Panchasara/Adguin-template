@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Miriam Libre';
-  src: url('./MiriamLibre-Regular.ttf');
+  font-family: "Miriam Libre";
+  src: url("./MiriamLibre-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Abandoned' ;
-  src: url('./Abandoned-Bold.ttf');
+  font-family: "Abandoned";
+  src: url("./Abandoned-Bold.ttf");
 }
 
 :root {
