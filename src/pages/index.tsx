@@ -7,9 +7,6 @@ import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
-
-
 export default function Home() {
   return (
     <>
@@ -30,8 +27,7 @@ export default function Home() {
               </h1>
               <h2 className="text-4xl font-light text-gray-800 text-center font-miriam">
                 Browse privately. Search privately. And ditch Big Tech.
-                
-              {/* <SlidingText /> */}
+                {/* <SlidingText /> */}
               </h2>
             </div>
 
@@ -86,11 +82,17 @@ export default function Home() {
             <div className="grid grid-cols-3 gap-10 h-[50vh] pb-[1vh]">
               <div className="bg-white shadow rounded-xl overflow-hidden">
                 <div className="absolute bg-white shadow shadow-[#7808FF] p-2 w-20 h-20 text-center rounded-full  ">
-                  <Image className="items-center ml-1 mt-2" alt="logo" src={"/rocket.svg"} width={50} height={50} />
+                  <Image
+                    className="items-center ml-1 mt-2"
+                    alt="logo"
+                    src={"/rocket.svg"}
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div className="p-8">
                   <h2 className="ml-2 mt-12 text-3xl font-bold text-gray-900 text-left mb-4 font-abandoned">
-                  Whatever
+                    Whatever
                   </h2>
                   <p className="text-gray-700 not-italic font-normal text-base leading-5 flex items-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -99,11 +101,17 @@ export default function Home() {
               </div>
               <div className="bg-white shadow rounded-xl overflow-hidden">
                 <div className="absolute bg-white shadow shadow-[#7808FF] p-2 w-20 h-30 top-84 text-center rounded-full  ">
-                <Image className="items-center ml-1 mt-2" alt="logo" src={"/rocket.svg"} width={50} height={50} />
+                  <Image
+                    className="items-center ml-1 mt-2"
+                    alt="logo"
+                    src={"/rocket.svg"}
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div className="p-8">
                   <h2 className="ml-2 mt-12 text-3xl font-extrabold text-gray-900 text-left mb-4 font-abandoned">
-                  Whatever
+                    Whatever
                   </h2>
                   <p className="text-gray-700 not-italic font-normal text-base leading-5 flex items-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -112,7 +120,13 @@ export default function Home() {
               </div>
               <div className="bg-white shadow rounded-xl overflow-hidden">
                 <div className="absolute bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20 left-160 top-84 text-center rounded-full  ">
-                <Image className="items-center ml-1 mt-2" alt="logo" src={"/rocket.svg"} width={50} height={50} />
+                  <Image
+                    className="items-center ml-1 mt-2"
+                    alt="logo"
+                    src={"/rocket.svg"}
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div className="p-8">
                   <h2 className="ml-2 mt-12 text-3xl font-black text-gray-900 text-left mb-4 font-abandoned">
@@ -125,11 +139,17 @@ export default function Home() {
               </div>
               <div className="bg-white shadow rounded-xl overflow-hidden">
                 <div className="absolute bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20  top-120 text-center rounded-full  ">
-                <Image className="items-center ml-1 mt-2" alt="logo" src={"/rocket.svg"} width={50} height={50} />
+                  <Image
+                    className="items-center ml-1 mt-2"
+                    alt="logo"
+                    src={"/rocket.svg"}
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div className="p-8">
                   <h2 className="ml-2 mt-12 text-3xl font-bold text-gray-900 text-left mb-4 font-abandoned">
-                  Whatever
+                    Whatever
                   </h2>
                   <p className="text-gray-700 not-italic font-normal text-base leading-5 flex items-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -138,11 +158,17 @@ export default function Home() {
               </div>
               <div className="bg-white shadow rounded-xl overflow-hidden">
                 <div className="absolute bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20 left-30 top-84 text-center rounded-full  ">
-                <Image className="items-center ml-1 mt-2" alt="logo" src={"/rocket.svg"} width={50} height={50} />
+                  <Image
+                    className="items-center ml-1 mt-2"
+                    alt="logo"
+                    src={"/rocket.svg"}
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div className="p-8">
                   <h2 className="ml-2 mt-12 text-3xl font-bold text-gray-900 text-left mb-4 font-abandoned">
-                  Whatever
+                    Whatever
                   </h2>
                   <p className="text-gray-700 not-italic font-normal text-base leading-5 flex items-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -151,30 +177,33 @@ export default function Home() {
               </div>
               <div className="bg-white shadow rounded-xl overflow-hidden">
                 <div className="absolute bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20 left-160 top-120 text-center rounded-full  ">
-                <Image className="items-center ml-1 mt-2" alt="logo" src={"/rocket.svg"} width={50} height={50} />
+                  <Image
+                    className="items-center ml-1 mt-2"
+                    alt="logo"
+                    src={"/rocket.svg"}
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div className="p-8">
                   <h2 className="ml-2 mt-12 text-3xl font-bold text-gray-900 text-left mb-4 font-abandoned">
-                  Whatever
+                    Whatever
                   </h2>
                   <p className="text-gray-700 not-italic font-normal text-base leading-5 flex items-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
                 </div>
               </div>
-             
             </div>
-             {/*sixth row */}
-             <div className="flex flex-col items-center justify-center mt-20 mb-16 h-[50vh]">
+            {/*sixth row */}
+            <div className="flex flex-col items-center justify-center mt-20 mb-16 h-[50vh]">
               <h1 className="text-7xl font-bold text-gray-900 text-center mb-4 font-abandoned">
                 REASONS TO SWITCH
               </h1>
-             </div>
-             {/* <div className="h-[50vh]">
+            </div>
+            {/* <div className="h-[50vh]">
                            <ImageSlider />
                            </div> */}
-
-
           </div>
         </div>
         {/* <Image src={'/bg.png'} alt="bg-image" className="relative w-[100vw] z-0 top-0 h-[120vh] bg-white" width="1000" height="1000" /> */}
