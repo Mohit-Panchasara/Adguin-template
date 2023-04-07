@@ -1,0 +1,27 @@
+.animate-slide {
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translateX(-100%);
+    transition-property: transform;
+    transition-duration: 5s;
+  }
+  
+  .animate-slide:hover {
+    transform: translateX(100%);
+    transition-duration: 0s;
+  }
+  
+  .animate-pulse {
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: 0.2;
+    transition-property: opacity;
+    transition-duration: 1.5s;
+  }
+  
+  .animate-pulse:hover {
+    opacity: 1;
+    transition-duration: 0s;
+  }
