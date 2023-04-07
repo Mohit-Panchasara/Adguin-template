@@ -24,6 +24,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center mt-20 mb-16">
               <h1 className="text-8xl font-bold text-gray-800 text-center mb-4 font-abandoned">
                 THE BEST PRIVACY ONLINE
+                {/* <SlidingText /> */}
               </h1>
               <h2 className="text-4xl font-light text-gray-800 text-center font-miriam">
                 Browse privately. Search privately. And ditch Big Tech.
