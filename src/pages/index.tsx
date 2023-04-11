@@ -2,12 +2,18 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Navbar from "@/components/organisms/navbar";
+import SignUpSection from "@/components/organisms/signup";
+import {useTheme} from 'next-themes'
+
+
 // import ImageSlider from "@/components/organisms/imageslider";
 // import SlidingText from "@/components/molecules/textslide";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const {theme, setTheme} = useTheme()
   return (
     <>
       <Head>
@@ -16,8 +22,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="w-[100vw] h-[50vh] absolute bg-none z-10">
-        <div className="bg-white"></div>
+      <Navbar />
+      <main className="w-[100vw] h-[100vh] z-10 mb-[163vh]">
+  
+      <div
+        className="bg-cover bg-center flex flex-col justify-center"
+        style={{ backgroundImage: "url('/testbg.png')" }}
+      >
+       
+        <div className=""></div>
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
           <div className=" max-w-6xl w-full px-4">
             {/* First Row */}
@@ -82,7 +95,7 @@ export default function Home() {
             {/*fifth row*/}
             <div className="grid grid-cols-3 gap-10 h-[50vh] pb-[1vh]">
               <div className="bg-white shadow rounded-xl overflow-hidden">
-                <div className="absolute bg-white shadow shadow-[#7808FF] p-2 w-20 h-20 text-center rounded-full  ">
+                <div className="relative bg-white shadow shadow-[#7808FF] p-2 w-20 h-20 text-center rounded-full  ">
                   <Image
                     className="items-center ml-1 mt-2"
                     alt="logo"
@@ -101,7 +114,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-white shadow rounded-xl overflow-hidden">
-                <div className="absolute bg-white shadow shadow-[#7808FF] p-2 w-20 h-30 top-84 text-center rounded-full  ">
+                <div className="relative bg-white shadow shadow-[#7808FF] p-2 w-20 h-30 top-84 text-center rounded-full  ">
                   <Image
                     className="items-center ml-1 mt-2"
                     alt="logo"
@@ -110,6 +123,7 @@ export default function Home() {
                     height={50}
                   />
                 </div>
+                {/* this is it */}
                 <div className="p-8">
                   <h2 className="ml-2 mt-12 text-3xl font-extrabold text-gray-900 text-left mb-4 font-abandoned">
                     Whatever
@@ -120,7 +134,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-white shadow rounded-xl overflow-hidden">
-                <div className="absolute bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20 left-160 top-84 text-center rounded-full  ">
+                <div className="relative bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20 left-160 top-84 text-center rounded-full  ">
                   <Image
                     className="items-center ml-1 mt-2"
                     alt="logo"
@@ -139,7 +153,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-white shadow rounded-xl overflow-hidden">
-                <div className="absolute bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20  top-120 text-center rounded-full  ">
+                <div className="relative bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20  top-120 text-center rounded-full  ">
                   <Image
                     className="items-center ml-1 mt-2"
                     alt="logo"
@@ -158,7 +172,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-white shadow rounded-xl overflow-hidden">
-                <div className="absolute bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20 left-30 top-84 text-center rounded-full  ">
+                <div className="relative bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20 left-30 top-84 text-center rounded-full  ">
                   <Image
                     className="items-center ml-1 mt-2"
                     alt="logo"
@@ -177,7 +191,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-white shadow rounded-xl overflow-hidden">
-                <div className="absolute bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20 left-160 top-120 text-center rounded-full  ">
+                <div className="relative bg-white shadow shadow-[#7808FF] w-12 h-12 p-2  w-20 h-20 left-160 top-120 text-center rounded-full  ">
                   <Image
                     className="items-center ml-1 mt-2"
                     alt="logo"
@@ -197,17 +211,28 @@ export default function Home() {
               </div>
             </div>
             {/*sixth row */}
-            <div className="flex flex-col items-center justify-center mt-20 mb-16 h-[50vh]">
+            <div className="flex flex-col items-center justify-center mt-40 mb-40 h-[50vh]">
               <h1 className="text-7xl font-bold text-gray-900 text-center mb-4 font-abandoned">
                 REASONS TO SWITCH
               </h1>
+              
+              <Image
+                    className="items-center ml-[0vw] mt-2"
+                    alt="logo"
+                    src={"/test.png"}
+                    width={1000}
+                    height={1000}
+                  />
             </div>
             {/* <div className="h-[50vh]">
                            <ImageSlider />
                            </div> */}
+                           <SignUpSection />d    
+
           </div>
         </div>
         {/* <Image src={'/bg.png'} alt="bg-image" className="relative w-[100vw] z-0 top-0 h-[120vh] bg-white" width="1000" height="1000" /> */}
+       </div>
       </main>
     </>
   );

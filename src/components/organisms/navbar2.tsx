@@ -1,15 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
-import CustomButton from "../atoms/themebutton";
 
 const Navbar = () => {
   return (
-    <nav className=" flex list-none items-center justify-between bg-gray-100 flex-wrap p-6">
+    <nav className="absolute     top-0 left-0 w-full bg-transparent z-10 flex list-none items-center justify-between flex-wrap p-6">
        
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <Link href="/">
           <li className="text-white font-bold text-xl ">
-            <Image alt="logo" src={"/logo.png"} width={100} height={100} />
+            <Image alt="logo" src={"/logowhite.svg"} width={100} height={100} />
           </li>
         </Link>
       </div>
@@ -25,25 +24,25 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      <div className="w-full block flex-grow lg:flex lg:items-center hover:text-gray lg:w-auto text-black">
+      <div className="w-full block flex-grow lg:flex lg:items-center hover:text-gray lg:w-auto text-white">
         <div className="text-lg lg:flex-grow ml-[20vw]">
           <Link href="/">
-            <li className="block mt-4 lg:inline-block lg:mt-0 text-black  mr-[7vw]">
+            <p className="block mt-4 lg:inline-block lg:mt-0  mr-[7vw]">
               Home
-            </li>
+            </p>
           </Link>
           <Link href="/solutions">
-            <li className="block mt-4 lg:inline-block lg:mt-0 mr-[7vw]">
+            <p className="block mt-4 lg:inline-block lg:mt-0 mr-[7vw]">
               Solutions
-            </li>
+            </p>
           </Link>
           <Link href="/resources">
-            <li className="block mt-4 lg:inline-block lg:mt-0 mr-[7vw]">
+            <p className="block mt-4 lg:inline-block lg:mt-0 mr-[7vw]">
               Resources
-            </li>
+            </p>
           </Link>
           <Link href="/about">
-            <li className="block mt-4 lg:inline-block lg:mt-0 ">About</li>
+            <p className="block mt-4 lg:inline-block lg:mt-0 ">About</p>
           </Link>
         </div>
         <div className=" w-[109px] px-40">
@@ -51,7 +50,6 @@ const Navbar = () => {
             Connect Wallet
           </button>
         </div>
-        <CustomButton />
       </div>
     </nav>
   );
